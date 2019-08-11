@@ -30,6 +30,7 @@
 
 a:hover {
 	text-decoration: none;
+	color: rgb(182, 40, 74) !important;
 }
 
 ::selection {
@@ -203,10 +204,6 @@ a:hover {
 
 .specs img {
 	margin-bottom: 4rem;
-}
-
-#spec {
-	padding-top: 4rem;
 }
 
 .specs>.tit {
