@@ -1,0 +1,39 @@
+
+http://joohyunedu.com/%EA%B9%80%EB%8B%A4%EC%97%B0/about.html
+
+Primary Skills
+
+HTML	웹 표준 준수, HTML5 시맨틱 태그 사용, Inline코딩숙지
+CSS	CSS 5.6 속성 사용, 개념 이해,사용 경험
+JavaScript/jQuery	객체 지향 이해, jQuery Events·Effects 등 숙지
+크로스 브라우징	메이저 브라우저(IE, MS Edge, Chrome, Firefox 등) 호환성 대처
+웹 접근성	한국형 웹 콘텐츠 접근성 지침에 맞는 코딩 가능
+반응형 웹	뷰포트·유동형 그리드·미디어 쿼리 이해
+모바일 웹	하이브리드 앱의 기반이 되는 모바일 웹 제작 가능
+프레임워크	Bootstrap 사용 가능
+플러그인	다양한 플러그인의 사용 경험(Chart.js, slick.js, swiper.js, video.js 등)
+아이콘 폰트	glyphicon, Font Awesome 등의 아이콘 폰트 사용 가능
+기타	vscode, brackets 에디터이용 
+
+
+
+도전을 두려워하지 않고 끊임없이 성장하는 신입 입니다. 
+항상 경청하는 자세로 소통하고 협업하며 귀사의 목표와 함께하겠습니다. 
+
+
+$('.btn-drawer-toggle').on('click', function(e){
+	e.preventDefault();	
+	if(wrap.hasClass('drawer-open') === true){
+		wrap.removeClass('drawer-open');
+		$('html, body').off('mousewheel DOMMouseScroll touchmove', handler);
+		$('.header h1 img').attr('src', '../assets/images/common/logo.png');
+		TweenMax.fromTo(".drawer", 0.1, {width: "100%"}, {width: "0px", ease: Linear.easeInOut});
+		TweenMax.to(".gnb a", 0.25, {scaleX: 0, scaleY: 0, alpha: 0});
+	}else{
+		wrap.addClass('drawer-open');
+		$('html, body').on('mousewheel DOMMouseScroll touchmove', handler);
+		$('.header h1 img').attr('src', '../assets/images/common/logo_reverse.png');
+		TweenMax.fromTo(".drawer", 0.1, {width: "0px"}, {width: "100%", ease: Linear.easeInOut});
+		TweenMax.staggerFromTo(".gnb a", 0.25, {scaleX: 0, scaleY: 0, alpha: 0, left: -100, ease: Quad.easeInOut}, {scaleX: 1, scaleY: 1, alpha: 1, left: 0}, 0.1);
+	}
+})

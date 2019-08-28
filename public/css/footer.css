@@ -1,0 +1,9 @@
+/* footer */
+footer  {position: relative; line-height: 1.6em; background-color: #eee; }
+footer .wrap {padding: 2rem 0; border-top: 1px solid #ccc;}
+footer button {float: right; transition-duration: 0.3s;}
+footer address {float: left; text-align: left;}
+footer #bt_top:hover{transform: translate(0, -1rem);}
+#bt_top img{width: 2rem; padding-top: 1rem;}
+#bt_top {background-color: transparent;}
+

@@ -1,0 +1,61 @@
+.contain {width: 100%; position: relative; border: 1px solid #f00; height: 1080px;}
+.wraps {width: 100%; text-align: center; margin: auto;}
+.wrap {width: 80%; text-align: center; margin: auto;}
+.tops {border: 1px solid #f00;position: fixed; top: 0; left: 0; z-index: 10; background-color: 3e4149; }
+.navis {padding: 3rem 0;}
+.logo {width: 2.6rem; height: 2.6rem; background-color: #151515; padding: 4px; float: left;}
+.menus {float: right; margin-top: 1.2rem ;padding-right: 2rem; }
+.menu {float: left; padding-right: 4rem;}
+.ghost{width: 2.6rem; height: 2.6rem; padding: 4px; float: right; position: absolute; z-index: 9999; right: 10%;}
+
+
+
+
+
+
+.menu-trigger,
+.menu-trigger span {
+	display : inline-block;
+	transition : all .4s;
+	box-sizing : border-box;
+}
+.menu-trigger {
+	position : relative;
+	width : 50px;
+	height : 44px;
+}
+.menu-trigger span {
+	position : absolute;
+	left : 0;
+	width : 100%;
+	height : 4px;
+	background-color : #fff;
+	border-radius : 4px;
+}
+.menu-trigger span:nth-of-type(1) {
+	top : 0;
+}
+.menu-trigger span:nth-of-type(2) {
+	top : 20px;
+}
+.menu-trigger span:nth-of-type(3) {
+	bottom : 0;}
+
+
+
+.menu-trigger.active span:nth-of-type(1)
+.menu-trigger.active span:nth-of-type(3) {	width : 20px;}
+.menu-trigger.active span:nth-of-type(1) {	-webkit-transform : translate (-1px, 13px) rotate (-45deg);
+	transform:translate (-1px, 13px) rotate (-45deg);}
+.menu-trigger.active span:nth-of-type(3) {
+	-webkit-transform:translate (-1px, -13px) rotate (45deg);
+	transform:translate (-1px, -13px) rotate (45deg);
+}
+
+/*
+.ghost_menu {width: 60%; position: absolute; top: 0; right: 10%; z-index: 12; text-align: right; background-color:darkcyan ;  padding-top: 10rem; }
+.ghost_menu h1 {margin-top: 5rem;}
+.g_close {width: 1.5rem; float: right; margin-top: 5rem;}
+.ghost_menu2 {background-color: darkgray; width: 200px; height: 1000px; position: absolute; top: 0; right: 0; z-index: 13;}
+@media 
+*/

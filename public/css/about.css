@@ -1,0 +1,97 @@
+.tit_txt {background-image: url(../img/about.png); background-position: center; background-repeat: no-repeat;}
+
+/* page2 */
+.page2 {width: 100%; height: 100vh; margin: 6rem 0; display: flex; justify-content: space-between; align-items: center; align-content: center; position: relative;}
+/* .page2 {width: 100%; height: 100vh; margin: 6rem 0; display: table-cell; vertical-align: middle; align-items: center; align-content: center; position: relative;} */
+
+.page2 > .about_pic {width: 29%;}
+.page2 > .about_pic > .tit {text-align: center; font-size: 1em; margin-bottom: 1.5em;}
+.page2 > .about_pic > img {width: 60%; opacity: 0.5; transition: all 0.5s ease-in-out;}
+.page2 > .about_pic > img:hover {opacity: 1; transform: scale(1.1); }
+.page2 > .about_cont {width: 55%; line-height: 1em; text-align: justify;}
+
+/* page2 > table */
+table {width: 100%; border-collapse: separate; border-spacing: 0; empty-cells: show; table-layout: fixed;}
+table caption {margin-bottom: 2rem; font-size: 1.6rem; color: #000; font-weight: 700; text-align: left;}
+table th, 
+table td {padding: 1rem 0; border-bottom: 0.1rem rgba(0, 0, 0, 0.1) solid; line-height: 1.5;}
+table th {padding-right: 2rem;}
+table tr:first-child th,
+table tr:first-child td {border-top: 0.1rem rgba(0, 0, 0, 0.1) solid;}
+
+
+.page3 > .wrap {position: relative;}
+.cnts {height: 1080px; display: flex; align-items: center; justify-content: space-between;}
+.int {width: 44%;}
+.cnt {width: 44%;}
+
+
+/* skills */
+.skills {position: relative; display: flex;}
+.skill {margin: 50px auto; padding: 0;}
+.skill-per {position: relative; width: 140px; height: 140px; float: left;}
+.skill-per > div {width: 140px; height: 140px; transform: translate(-1px,-6px);}
+.skill-per > p {position: absolute; top: 33%; left: 30%;
+	font-size: 32px; font-weight: bold;}
+.skill-text { padding: 10px 0 0 20px; float: left;}
+.skill-tit1 {font-size: 36px; font-weight: bold;}
+.skill-tit2 {font-size: 16px; letter-spacing: -1px; font-family: 'Noto Sans KR', sans-serif; color: #555;}
+
+/* top_bt */
+/* .top_bt {position: fixed; text-align: center; bottom: 50px; right: 50px;  z-index: 999; display: none;}
+.top_bt div {position: absolute; z-index: 99; right: 5%; bottom: 20%; padding-right: 0.65rem; padding-bottom: 1.15rem; font-family: 'Titillium Web', sans-serif; color: white;	line-height: 1;}
+.top_bt img {position: absolute; width: 50px; right: 5%; bottom: 20%;}
+.top_bt:hover {cursor: pointer;} */
+
+
+/***** 반응형 *****/
+/* @media screen and (max-width: 1200px) {
+	
+	.skills {align-content: center; display: flex;}
+	.skill {position: relative;}
+	.skill-per {float: none; position: relative; width: 140px; height: 140px; left: 50%; transform: translateX(-50%);}
+	.skill-per > div {width: 140px; height: 140px; transform: translate(-1px,-6px);}
+	.skill-per > p {position: absolute; }
+	.skill-text {padding:0; float: none; text-align: center;}
+}
+
+@media screen and (max-width: 992px) {
+	.tits {margin-top: 100px;}
+	.tops {display: none;}
+	.tops-sm {display: block; position: relative; z-index: 999; width: 100%; height: 75px; background-color: #506fd4;}
+	.tops-sm > .logo {position: absolute; top: 12.5px; left: 50%; transform: translateX(-50%);}
+	.tops-sm > .logo > a > img {width: 45px;}
+	.tops-sm > .ham { position: absolute; top: 50%; transform: translateY(-50%); right: 5%;}
+	.tops-sm > .ham > img {width: 30px;}
+	.tops-sm > .ham > img:hover {cursor: pointer;}
+
+	.tops-hover {display: none; position: absolute; width: 100%; height: 300px; left: 0; top: 75px; background-color: #506fd4; font-family: 'Titillium Web', sans-serif; font-weight: bold; color: #f9f9fb; font-size: 40px;}
+	.tops-hover > .navs {display: flex; flex-direction: column; align-items: center;
+		position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+	.skill {margin: 30px auto;}
+
+}
+
+@media screen and (max-width: 640px) {
+	.tops {display: none;}
+
+	.tops-sm {display: block; position: relative; height: 75px; background-color: #506fd4;}
+	.tops-sm > .logo {position: absolute; top: 12.5px; left: 50%; transform: translateX(-50%);}
+	.tops-sm > .logo > a > img {width: 45px;}
+	.tops-sm > .nav {position: absolute; top: 50%; transform: translateY(-50%); right: 5%;}
+	.tops-sm > .nav > img {width: 30px;}
+	.tops-hover {font-size: 32px; height: 250px;}
+
+	.wrap {min-width: 80%; margin-top: 0; display: block;}
+	.skill {margin: 30px auto;}
+}
+
+@media screen and (max-width: 400px) {
+	.tits {margin-top: 50px;}
+	.tit {font-size: 32px;}
+
+	.skills {margin-top: 30px;}
+	.skill {margin: 0; margin-bottom: 30px;}
+}
+ */
