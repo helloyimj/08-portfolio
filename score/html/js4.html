@@ -1,0 +1,99 @@
+<script>
+		/*
+		데이터 타입
+		* 변수에는 아래의 모든것을 담을 수 있다.
+		Primitive type
+		- String 		=> 문자열 "", ''
+		- Integer		=> 정수
+		- Float			=> 실수(소수점)
+		- Boolean		=> true(1), false(0)
+		- null			=> empty/빈값 -> 변수를 선언했는데 아무것도 넣지 않았다.
+		- undefined	=> 변수가 선언되지 않았다.
+		Reference type
+		- Object			=> 자바스크립트 객체
+		- Array				=> 배열
+		- function		=> 함수
+		*/
+		var a = '1.2';
+		console.log(typeof a);
+		var b = 1;
+		console.log(typeof b);
+		var c = function(){
+			
+		};
+		console.log(c);
+		console.log(typeof c);
+
+		var d = new Array(1,2,3);
+		console.log(d);
+		console.log(typeof d);
+
+var e = [1,2,3];
+console.log(e);
+		console.log(typeof e);
+
+		d.push(4);
+		console.log(d);
+		console.log(typeof d);
+
+		var f = d.pop();
+		console.log(f);
+		console.log(d);
+
+		var g = d.pop();
+		console.log(f);
+		console.log(d);
+
+		var h = d.shift();
+		console.log(h);
+		console.log(d);
+
+		d.push(2);
+		d.push(3);
+		d.push(4);
+		d.push(5);
+		console.log(d);
+
+
+		console.clear();
+
+		var fn = function(){
+				console.log("hi");
+		}
+
+		console.log(fn);
+fn();
+
+var fn2 = fn;
+
+		console.log(fn2);
+	
+		//$("#bt").click(fn);
+
+var arr = [1,2,3];
+arr.push(1);
+arr.push(2);
+arr.push(fn);
+arr.push(fn2);
+arr.push("Hello");
+arr.push({a:1, b:2});
+		console.log(arr);
+		arr[5] ();
+
+var obj = {a:1, b:2};
+obj.c = 3;
+
+console.log(obj);
+
+obj.d = fn;
+
+console.log(obj);
+obj.d();
+obj.e = arr;
+
+console.log(obj);
+obj.e[5]();
+	
+
+		</script>
+

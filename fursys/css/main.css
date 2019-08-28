@@ -1,0 +1,37 @@
+html, body {font-size: 14px;}
+.wraps {width: 100%; overflow-x: hidden;}
+.wrap {width: 1080px; margin: 0 auto;}
+a {text-decoration: none !important; color: inherit !important;}
+
+.tops {display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px;}
+.navis {display: flex;}
+.navis > li {margin: 0 12px; position: relative; cursor: pointer;}
+.navi_sub {position: absolute; z-index: 9999; font-size: 0.875rem; display: none; left: -15px; top: 30px;}
+.navi_sub > div:first-child {padding-left: 30px;}
+.navi_sub > div:first-child > img {transform: translateY(1px);}
+.navi_sub > div:last-child {border: 1px solid #ccc; padding: 1rem; background-color: #fff; display: flex; width: 100%;}
+.navi_sub_ul {min-width: 140px; border-top: 2px solid #666; padding-top: 0.5rem; flex: 1 0; margin: 0.5rem;}
+.navi_sub_tit {padding-bottom: 2rem;}
+.navi_sub_cont {padding-bottom: 0.5rem;}
+.navi_sub_cont > div {margin: 0.5rem 0;}
+.navi_sub_cont > div:hover {background-color: pink; color: red; font-weight: bold; cursor: pointer;}
+.navi_udot {border-bottom: 1px dotted #666;}
+.schs01 {float: right; background-color: red; padding: 0.5rem 0.5rem 0.5rem 5rem;
+	 text-align: right; color: #fff; font-size: 0.75rem;}
+
+.bans {position: relative;}
+.bans > i {position: absolute; color: #fff; font-size: 6rem; z-index: 9998; top:50%; transform: translateY(-50%);}
+.bans > i.fa-angle-left {left: 5%;}
+.bans > i.fa-angle-right {right: 5%;}
+.pagers {position: absolute; color: #fff; font-size: 0.25rem; z-index: 9998; bottom: 10%; left: 50%; transform: translateX(-50%);}
+.pagers > i {margin: 0 0.5rem;}
+
+.ban > li {width: 100%; overflow-x: hidden;}
+.ban > .ban_li {position: absolute; top: 0; z-index: 1;}
+.bt_ban {position: absolute; transform: translateX(-50%);}
+.ban > li:nth-child(2) > .bt_ban {left: 50%; top: 45%;}
+.ban > li:nth-child(3) > .bt_ban {left: 77%; top: 52%;}
+.ban > li:nth-child(4) > .bt_ban {left: 50%; top: 58%;}
+.ban > li:nth-child(5) > .bt_ban {left: 70%; top: 40%;}
+.ban > li:nth-child(6) > .bt_ban {left: 50%; top: 60%;}
+.quicks {position: fixed; right: 0; top: 50%; z-index: 100;}
