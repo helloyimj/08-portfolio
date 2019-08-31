@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 /***** Normalize *****/
-html, body {margin:0; padding:0; font-size:16px; line-height: 1.5; color:#151515; 
+html, body {margin:0; padding:0; font-size:16px; line-height: 1.5; color:#151515; background-color: #eee;
 	box-sizing: border-box; height: 100%; font-family: 'Josefin Sans', sans-serif;}
 p, div, ol, ul, li, h1, h2, h3, h4, h5, h6, header, footer, nav, article, aside, summary, main, details {margin:0; padding:0; box-sizing: border-box; font-weight: 300 !important;}
 ul, ol, li {list-style: none;}

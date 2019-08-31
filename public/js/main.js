@@ -1,3 +1,5 @@
+// ghos button
+
 $(".ghost").click(function () {
 	$(this).toggleClass("active");
 	if ($("#main_nav").width() === 0) {
@@ -11,12 +13,20 @@ $(".ghost").click(function () {
 	}
 });
 
+
+// scroll
 $(function () {
+	$("#bt_down").click(function () {
+		$('html, body').animate({
+			scrollTop: 750
+		}, 500);
+	});
 	$("#bt_top").click(function () {
 		$('html, body').animate({
 			scrollTop: 0
 		}, 500);
 	});
+	
 });
 
 $(".link-bt").click(function(){
@@ -27,7 +37,7 @@ $(".link-bt").click(function(){
 });
 
 
-
+// skill
 
 $(".skill-per").find("p").each(function(){
 	var $tar = $(this);
@@ -56,3 +66,11 @@ $(".skill-per").find("p").each(function(){
 		 else clearInterval(interval);
 	},10);
 });
+
+new WOW().init();
+
+
+$("#bt_pf").click(function() {
+	$(location).attr("href", "https://naver.com");
+});
+

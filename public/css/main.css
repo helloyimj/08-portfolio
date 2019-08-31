@@ -1,6 +1,14 @@
-.contain {width: 100%; position: relative; background-color: rgb(253, 244, 244); color: #292929;}
+.contain {width: 100%; position: relative; background-color: #eee; color: #292929;}
 .wraps {width: 100%;}
-.wrap {width: 80%; text-align: center;  margin:0 auto;}
+.wrap {width: 80%; text-align: center; margin:0 auto;}
+::-moz-selection {
+	background: #c07cfc4f;
+	color: #fff;
+ }
+ ::selection {
+	background: #c07cfc4f;
+	color: #fff;
+ }
 
 /* navigation */
 .tops {position: fixed; padding: 2rem 0; top: 0; left: 0; z-index:10;  background-color: #eee;}
@@ -12,7 +20,8 @@
 	background: #c07cfc4f; transition-duration: 0.2s;}
 .menu:hover::after {width: 100%; height: 0.5rem; background:#c07cfc4f; position: absolute;}
 .menu-active {margin-left: 4rem; cursor: pointer; position: relative;}
-.menu-active:after {content: ""; display: block; width: 100%;  height: 0.5rem; background:#c07cfc4f; position: absolute; top: 0.3rem;}
+.menu-active:after {content: ""; display: block; width: 100%;  height: 0.5rem; 
+	background:#c07cfc4f; position: absolute; top: 0.325rem;}
 
 /* ghost button */
 .ghost {width: 36px; height: 30px; cursor: pointer; position: fixed;
@@ -26,17 +35,19 @@
   .ghost.active .bar3 {	margin-top: -3px; transform: rotate(135deg);}
   .ghost.active:after +  #main_nav {right: -100vw;}
   
-	
 /* nav menu */
 #main_nav {display: flex; justify-content: center; align-items: center; width: 0; height: 100%; position: fixed; top: 0; right: 0; background-color: #151515; z-index: 11; color: #f1f1f1; text-align: left; box-sizing: border-box;}
 #main_nav ul {overflow: hidden;}
 #main_nav ul li {position: relative; line-height: 3rem; letter-spacing: 0.4em; text-indent: 0.4em;}
 #main_nav ul li::after{content: ""; display: block;	position: absolute;	left: 0; bottom: 3px; width: 0%; height: 2px;	
-	background: #c07cfc; transition-duration: 0.2s;}
+	background: #c07cfc; transition-duration: 0.2s;}	
 #main_nav ul li:hover::after, #main_nav ul li.active::after{width: 100%;}
 
+.pages {
+	background: #eee;
+}
 /* page1 */
-.page1{width: 100vw; height: 100vh; padding-top: 100px; display: table-cell; vertical-align: middle; font-weight: 200;}
+.page1{width: 100vw; height: 100vh; padding-top: 150px; display: table-cell; vertical-align: middle; font-weight: 200;}
 .page1 h5 {padding-top: 4rem;}
 .tit_txt {background-image: url(../img/portfolio.png); background-position: center; background-repeat: no-repeat;}
 
@@ -64,32 +75,28 @@ footer  {position: relative; line-height: 1.6em; background-color: #eee; }
 footer .wrap {padding: 2rem 0; border-top: 1px solid #ccc;}
 footer button {float: right; transition-duration: 0.3s;}
 footer address {float: left; text-align: left;}
-footer #bt_top:hover{transform: translate(0, -1rem);}
-#bt_top img{width: 2rem; padding-top: 1rem;}
+/* footer #bt_top:hover{transform: translate(0, -1rem);} */
+#bt_top img{width: 1.5rem;}
 #bt_top {background-color: transparent;}
+/* 
 
-
-/* animation */
-.arrow_bot {
-	animation-name: arrowBot;
+#bt_top {
+	animation-name: btTop;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	/* position: absolute; */
-	width: 25px;
-	height: 25px;
+	width: 1.5rem;
+	height: 1.5rem;
 	left: 50%;
 	right: 50%;
-	bottom:100px;
 	margin: 0 auto;
-	margin-top: 16rem;
-	transform: rotate(180deg);
+	transform: rotate(0deg);
 	z-index: 99;
 }
-.arrow_bot img {
-	animation: arrowBot 2s both linear infinite;
+#bt_top img {
+	animation: btTopt 2s both linear infinite;
 }
 
-@keyframes arrowBot {
+@keyframes btTop {
 	0% {
 		opacity: 0;
 		transform: translateY(30px);
@@ -100,7 +107,47 @@ footer #bt_top:hover{transform: translate(0, -1rem);}
 }
 	100% {
 		opacity: 0;
-		transform: translateY(-30px);
+		transform: translateY(30px);
+	}
+} */
+
+
+
+
+
+/* animation */
+.arrow_bot {
+	animation-name: arrowBot;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/* position: absolute; */
+	width: 1.5rem;
+	height: 1.5rem;
+	left: 50%;
+	right: 50%;
+	bottom:100px;
+	margin: 0 auto;
+	margin-top: 16rem;
+	transform: rotate(180deg);
+	z-index: 99;
+}
+.arrow_bot img {
+	animation: arrowBot 2s both linear infinite;
+	cursor: pointer;
+}
+
+@keyframes arrowBot {
+	0% {
+		opacity: 0;
+		transform: translateY(2em);
+	}
+50% {
+	opacity: 0.5;
+	transform: translateY(0);
+}
+	100% {
+		opacity: 0;
+		transform: translateY(-2em);
 	}
 }
 

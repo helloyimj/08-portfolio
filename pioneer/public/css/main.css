@@ -1,4 +1,7 @@
 /***** 공통사항 *****/
+html {
+    scroll-behavior: smooth;
+}
 .wrap {
 	width: 96%;
 	margin: auto;
