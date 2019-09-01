@@ -17,7 +17,8 @@
 .menus {font-weight: 200; display: flex; justify-content: flex-start;}
 .menu {margin-left: 4rem; cursor: pointer; position: relative;}
 .menu::after{content: ""; display: block; position: absolute; left: 0; bottom: 10px; width: 0%; height: 0.5rem;	
-	background: #c07cfc4f; transition-duration: 0.2s;}
+	background: #c07cfc4f; 
+	transition-duration: 0.2s;}
 .menu:hover::after {width: 100%; height: 0.5rem; background:#c07cfc4f; position: absolute;}
 .menu-active {margin-left: 4rem; cursor: pointer; position: relative;}
 .menu-active:after {content: ""; display: block; width: 100%;  height: 0.5rem; 
@@ -75,10 +76,26 @@ footer  {position: relative; line-height: 1.6em; background-color: #eee; }
 footer .wrap {padding: 2rem 0; border-top: 1px solid #ccc;}
 footer button {float: right; transition-duration: 0.3s;}
 footer address {float: left; text-align: left;}
-/* footer #bt_top:hover{transform: translate(0, -1rem);} */
+
+footer #bt_top:hover{transform: translate(0, -0.25rem);}
+#bt_top img{width: 1.5rem;}
 #bt_top img{width: 1.5rem;}
 #bt_top {background-color: transparent;}
+
+footer #bt_top:hover{transform: translate(0, -1rem);}
+
+
 /* 
+footer {position: fixed; bottom: 0; line-height: 1.5rem; }
+footer .wrap {padding: 1rem 0;  border-top: 1px solid #fff;}
+footer button {float: right; transition-duration: 0.2s;}
+footer address {font-size: 0.75rem;}
+footer address .mail {display: none;}
+footer #bt_top:hover{transform: translate(0);}
+#bt_top img{width: 1.5rem; padding-top: 0.125rem;}
+#bt_top {background-color: transparent;}
+/* 
+
 
 #bt_top {
 	animation-name: btTop;
