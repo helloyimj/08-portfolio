@@ -1,0 +1,24 @@
+
+.page2 {width: 100%; height: 100%; margin: 6rem auto; display: flex; justify-content: space-between; 
+    align-items: center; align-content: center; position: relative;}
+    .page1{width: 100vw; height: 100vh; padding-top: 100px; display: table-cell; vertical-align: middle; font-weight: 200; position: relative;}
+    .page1 h5 {padding-top: 4rem;}
+    .tit_txt {background-image: url(../img/skills.png); background-position: center; background-repeat: no-repeat;}
+    
+/* canvas {
+
+} */
+
+.skills {position: relative; display: flex;}
+.skill {}
+
+.skill-per {position: relative; width: 140px; height: 140px; 
+    left: 50%;
+    transform: translateX(-50%);}
+.skill-per > div {width: 140px; height: 140px; transform: translate(-1px,-6px);}
+.skill-per > p {position: absolute; top: 33%; left: 30%;
+	font-size: 32px; font-weight: bold; animation-direction: 0.5s;}
+
+.skill-text { padding: 1em;}
+.skill-tit1 {text-align: center; font-size: 36px; font-weight: bold;}
+.skill-tit2 {text-align: left; letter-spacing: -1px; font-family: 'Noto Sans KR', sans-serif; color: #555;}

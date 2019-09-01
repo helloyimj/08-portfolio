@@ -1,4 +1,7 @@
-// ghos button
+
+
+
+// ghost button
 
 $(".ghost").click(function () {
 	$(this).toggleClass("active");
@@ -37,14 +40,16 @@ $(".link-bt").click(function(){
 });
 
 
-// skill
+// Chart
+
 
 $(".skill-per").find("p").each(function(){
 	var $tar = $(this);
 	var pct = Number($(this).data("pct"));
 
 	var datas = {
-		 datasets: [{data: [pct, (100-pct)], backgroundColor: ['#506fd4', '#ddd']}]
+		 datasets: [{data: [pct, (100-pct)], backgroundColor: ['#c07cfc4f', '#ddd']}]
+
 	};
 	var options = {
 		 cutoutPercentage: 75,
@@ -67,10 +72,25 @@ $(".skill-per").find("p").each(function(){
 	},10);
 });
 
+$(window).scroll(function() {
+	var scroll = $(window).scrollTop();
+		$(".skill-per").addClass("skill-per2");
+	
+});
+
+
+// $(window).scroll(function(){
+// 	if($(this).scrollTop() > 500) {
+// 		$(".skills").show();
+// 	}
+// 	else {
+// 		$(".skills").hide();
+// 	}
+// });
+
 new WOW().init();
 
 
 $("#bt_pf").click(function() {
 	$(location).attr("href", "https://naver.com");
 });
-
