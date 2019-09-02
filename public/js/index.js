@@ -20,3 +20,16 @@ $(".navi > li").mouseleave(function(){
 		$(this).css({"display":"none"});
 	});
 });
+
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyAjoB-_7N4brn8pULoXBlqE_HZoXn8nSzE",
+    authDomain: "portfolio-7012f.firebaseapp.com",
+    databaseURL: "https://portfolio-7012f.firebaseio.com",
+    projectId: "portfolio-7012f",
+    storageBucket: "portfolio-7012f.appspot.com",
+    messagingSenderId: "80725144175",
+    appId: "1:80725144175:web:54945613d8acb17a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);

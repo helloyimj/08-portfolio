@@ -1,5 +1,7 @@
 {
   "projects": {
-    "firebase deploy": "portfolio-7012f"
+    "firebase deploy": "portfolio-7012f",
+    "default": "portfolio-7012f",
+    "portfolio-7012f": "portfolio-7012f"
   }
 }

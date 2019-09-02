@@ -18,24 +18,34 @@
     <script src="../js/iscroll.js"></script>
     <script src="../js/jquery.mousewheel.min.js"></script>
     <!-- <script src="../js/yimj-page.js"></script> -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
     <title>YIMJ's portfolio</title>
 </head>
+<body>
+
 <header class="tops wraps">
     <div class="navis wrap">
         <div class="logo">
             <a href="../html/about.html"><img src="../img/logo4.png" alt="로고이미지" class="img"></a>
         </div>
         <ul class="menus">
-            <li class="menu clear">
+            <li>
                 <h5><span data-src="../html/about.html" class="link-bt">ABOUT ME</span></h5>
             </li>
-            <li class="menu-active clear">
+            <li class="active">
                 <h5><span data-src="../html/skills.html" class="link-bt">SKILLS</span></h5>
             </li>
-            <li class="menu clear">
+            <li>
                 <h5><span data-src="../html/main.html" class="link-bt">WORKS</span></h5>
             </li>
-            <li class="menu clear">
+            <li>
                 <h5><span data-src="../html/contact.html" class="link-bt">CONTACT</span></h5>
             </li>
         </ul>
@@ -49,14 +59,14 @@
 <nav id="main_nav">
     <ul>
         <li><a href="../html/about.html">ABOUT ME</a></li>
-        <li><a href="../html/skills.html">SKILLS</a></li>
+        <li class="active"><a href="../html/skills2.html">SKILLS</a></li>
         <li><a href="../html/main.html">WORKS</a></li>
         <li><a href="../html/contact.html">CONTACT</a></li>
     </ul>
 </nav>
 <!-- skills -->
 <div class="contain clear">
-    <section class="pages page1 wrap clear">
+    <section class="pages page5 wrap clear">
         <div class="tit_txt">
             <h1>두려움 없는 도전으로 끊임없이 성장 하겠습니다.</h1>
             <h5>SKILLS</h5>
@@ -107,10 +117,8 @@
                 <div class="skill-text">
                     <div class="skill-tit1">jQuery</div>
                     <div class="skill-tit2">
-                        - 이벤트 처리, 애니메이션 구현<br>
-                        Banner Slider, Scroll, Count Up<br>
-                        - 플러그인 활용가능<br>
-                        jQuery UI, IScroll, Calendar
+                        - 이벤트 처리, 애니메이션 구현 (Banner Slider, Scroll, Count Up 등)<br>
+                        - 플러그인 활용 가능 (jQuery UI, IScroll, Calendar 등)
                     </div>
                 </div>
             </div>
@@ -126,8 +134,7 @@
                     <div class="skill-tit1">JavaScript</div>
                     <div class="skill-tit2">
                         - JavaScript ES5/ES6 문법에 대한 이해<br>
-                        - 이벤트 처리, 애니메이션 구현<br>
-                        Banner Slider, Scroll, Count Up
+                        - 이벤트 처리, 애니메이션 구현 가능
                     </div>
                 </div>
             </div>
@@ -143,8 +150,8 @@
                     <div class="skill-tit1">Ajax</div>
                     <div class="skill-tit2">
                         - Asynchronous JavaScript and XML<br>
-                        - javascript와 xml을 이용하여 비동기 통신을 하는 기능<br>
-                        - 페이지 전환없이 동적으로 변화하는 모습을 자연스럽게 구현
+                        - javascript와 xml을 이용한 비동기 통신<br>
+                        - 페이지 전환없이 동적으로 변화하는 모습을 자연스럽게 구현 가능
                     </div>
                 </div>
             </div>
@@ -160,8 +167,7 @@
                     <div class="skill-tit1">Node.js</div>
                     <div class="skill-tit2">
                         - 크롬 V8 자바스크립트 엔진으로 빌드된 자바스크립트 런타임<br>
-                        - 이벤트 기반, 논블로킹 I/O 모델을 사용해 가볍고 효율적<br>
-                        - npm : 세계에서 가장 큰 오픈 소스 라이브러리 생태계
+                        - 이벤트 기반, 논블로킹 I/O 모델을 사용해 가볍고 효율적임<br>
                     </div>
                 </div>
             </div>
@@ -176,12 +182,8 @@
                 <div class="skill-text">
                     <div class="skill-tit1">Firebase</div>
                     <div class="skill-tit2">
-                        - 웹과 모바일 개발에 필요한 기능을 제공하는 <br>
-                        BaaS(Backend as a Service)<br>
-                        - 백엔드 개발을 통해 서버를 따로 설계, 구현하지 않고 <br>
-                        프론트엔드 개발에 집중할 수 있도록 도와주는 서비스<br>
-                        - 실시간 데이터베이스, 간편한 사용자 인증, <br>
-                        클라우드 저장소, 호스팅, 앱 테스트
+                        - 웹/모바일 개발 기능을 제공하는 BaaS(Backend as a Service)<br>
+                        - 실시간 데이터베이스, 간편한 사용자 인증, 클라우드 저장소, 호스팅, 앱 테스트
                     </div>
                 </div>
             </div>
@@ -212,7 +214,7 @@
     <footer class="wraps clear">
         <div class="wrap">
             <button id="bt_top">
-                <img src="../img/btn_top.png" alt="위로" class="img">
+                <img src="../img/btn_top.png" alt="최상단으로이동" class="img">
             </button>
             <address>
                 <p class="mail">helloyimj@gmail.com</p>
@@ -222,9 +224,6 @@
     </footer>
 </div>
 
-<script src="../js/Chart.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/typer.js"></script>
 </body>
 
 </html>
