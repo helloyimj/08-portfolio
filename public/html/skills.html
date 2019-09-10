@@ -11,217 +11,212 @@
     <link rel="stylesheet" href="../css/Chart.min.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/skills.css">
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/wow.min.js"></script>
     <script src="../js/iscroll.js"></script>
     <script src="../js/jquery.mousewheel.min.js"></script>
-    <!-- <script src="../js/yimj-page.js"></script> -->
-    <title>YIMJ's portfolio</title>
+    <script src="../js/yimj-page.js"></script>
+    <title>이민정 포트폴리오</title>
 </head>
 <header class="tops wraps">
-    <div class="navis wrap">
-        <div class="logo">
-            <a href="../html/about.html"><img src="../img/logo4.png" alt="로고이미지" class="img"></a>
+        <div class="navis wrap">
+            <div class="logo">
+                <a href="../html/about.html"><img src="../img/logo4.png" alt="로고이미지" class="img"></a>
+            </div>
+            <ul class="menus" id="nav_top">
+                    <li>
+                        <a href="../html/about.html">ABOUT ME</a>
+                    </li>
+                    <li class="on">
+                        <a href="../html/skills.html">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="../html/works.html">WORKS</a>
+                    </li>
+                    <li>
+                        <a href="../html/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            <div class="ghost" id="bt_ghost">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <nav id="nav_sub">
+                <ul>
+                    <li><a href="../html/about.html">ABOUT ME</a></li>
+                    <li class="on"><a href="../html/skills.html">SKILLS</a></li>
+                    <li><a href="../html/works.html">WORKS</a></li>
+                    <li><a href="../html/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-        <ul class="menus">
-            <li class="menu clear">
-                <h5><span data-src="../html/about.html" class="link-bt">ABOUT ME</span></h5>
-            </li>
-            <li class="menu-active clear">
-                <h5><span data-src="../html/skills.html" class="link-bt">SKILLS</span></h5>
-            </li>
-            <li class="menu clear">
-                <h5><span data-src="../html/main.html" class="link-bt">WORKS</span></h5>
-            </li>
-            <li class="menu clear">
-                <h5><span data-src="../html/contact.html" class="link-bt">CONTACT</span></h5>
-            </li>
-        </ul>
-    </div>
-</header>
-<div class="ghost" id="bt_ghost">
-    <span class="bar1"></span>
-    <span class="bar2"></span>
-    <span class="bar3"></span>
-</div>
-<nav id="main_nav">
-    <ul>
-        <li><a href="../html/about.html">ABOUT ME</a></li>
-        <li><a href="../html/skills.html">SKILLS</a></li>
-        <li><a href="../html/main.html">WORKS</a></li>
-        <li><a href="../html/contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+    </header>
 <!-- skills -->
 <div class="contain clear">
-	<section class="pages page1 wrap clear">
-		<div class="tit_txt">
-			<h1>두려움 없는 도전으로 끊임없이 성장 하겠습니다.</h1>
-			<h5>SKILLS</h5>
-		</div>
-	</section>
-	<section class="pages page2 wrap clear">
-		<div class="about_pic wow fadeInLeft" data-wow-offset="400" data-wow-duration="1s">
-			<img src="../img/disposition.png" alt="이미지" class="img">
-		</div>
-		<div class="about_cont wow fadeInRight" data-wow-offset="400" data-wow-duration="1s">
-			<table>
-				<colgroup>
-					<col width="30%">
-					<col width="70%">
-				</colgroup>
-				<tbody>
-					<tr>
-						<th scope="row">HTML</th>
-						<td>웹 표준 준수, HTML5 시맨틱 태그 사용</td>
-					</tr>
-					<tr>
-						<th scope="row">CSS</th>
-						<td>CSS 5.6 속성 사용 경험</td>
-					</tr>
-					<tr>
-						<th scope="row">JavaScript/jQuery</th>
-						<td>객체 지향 이해, jQuery Events·Effects 등 숙지</td>
-					</tr>
-					<tr>
-						<th scope="row">크로스 브라우징</th>
-						<td>메이저 브라우저(IE, MS Edge, Chrome, Firefox 등) 호환성 대처</td>
-					</tr>
-					<tr>
-						<th scope="row">웹 접근성</th>
-						<td>한국형 웹 콘텐츠 접근성 지침에 맞는 코딩 가능</td>
-					</tr>
-					<tr>
-						<th scope="row">반응형 웹</th>
-						<td>뷰포트·유동형 그리드·미디어 쿼리 이해</td>
-					</tr>
-					<tr>
-						<th scope="row">모바일 웹</th>
-						<td>하이브리드 앱의 기반이 되는 모바일 웹 제작 가능</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
+    <section class="pages page5 wrap clear">
+        <div class="tit_txt">
+            <h1>두려움 없는 도전으로 끊임없이 성장 하겠습니다.</h1>
+            <h5>SKILLS</h5>
+        </div>
+    </section>
+   
+    <section class="pages page2 wrap clear">
+        <div class="skills row w3-padding-16">
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%" data-wow-offset="200"></canvas>
+                    </div>
+                    <p data-pct="80" class="wow fadeInUp"></p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">Html</div>
+                    <div class="skill-tit2">
+                        - HTML5와 XHTML을 이용한 Coding<br>
+                        - 의미를 고려한 MarkUp
+                    </div>
+                </div>
+            </div>
 
-<section class="pages page3 skills wrap clear">
-	<div class="s_cont clear">
-		<div class="skill_tit">
-			<i class="fas fa-camera"></i> Illustrator
-		</div>
-		<div class="skill_graph">
-			<div class="skill_bar wow animated w95">95%</div>
-		</div>
-	</div>
-	<div class="s_cont clear">
-		<div class="skill_tit">
-			<i class="fas fa-laptop"></i> Photoshop
-		</div>
-		<div class="skill_graph">
-			<div class="skill_bar wow w90">90%</div>
-		</div>
-	</div>
-	<div class="s_cont clear">
-		<div class="skill_tit">
-			<i class="fas fa-image"></i> Web Design
-		</div>
-		<div class="skill_graph">
-			<div class="skill_bar wow w90">90%</div>
-		</div>
-	</div>
-	<div class="s_cont clear">
-		<div class="skill_tit">
-			<i class="fas fa-image"></i> HTML / CSS
-		</div>
-		<div class="skill_graph">
-			<div class="skill_bar wow w85">85%</div>
-		</div>
-	</div>
-	<div class="s_cont clear">
-		<div class="skill_tit">
-			<i class="fas fa-image"></i> JavaScript / jQuery
-		</div>
-		<div class="skill_graph">
-			<div class="skill_bar wow w70">70%</div>
-		</div>
-	</div>
-	<div class="s_cont clear">
-		<div class="skill_tit">
-			<i class="fas fa-image"></i> Ect (node.js / Ajax)
-		</div>
-		<div class="skill_graph">
-			<div class="skill_bar wow w55">55%</div>
-		</div>
-	</div>
-</section>
-<section class="pages page4 wrap clear">
-		<div class="skill-per">			
-				<div class="clear">
-					 <canvas width="100%" height="100%"></canvas>
-				</div>
-				<p data-pct="95" class="animated fadeInUp" ></p>
-			</div>
-			<p class="skill-txt">Illustrator</p>
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="90" class="wow fadeInUp">90%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">Css</div>
+                    <div class="skill-tit2">
+                        - CSS3를 사용하여 다양한 디자인 구현<br>
+                        - 반응형 사이트 제작
+                    </div>
+                </div>
+            </div>
 
-		 <div class="skill-per">
-				<div  class="clear">
-					 <canvas width="100%" height="100%"></canvas>
-				</div>
-				<p data-pct="90" class="animated fadeInUp"></p>
-			</div>
-			<p class="skill-txt">Photoshop</p>
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="80" class="wow fadeInUp">80%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">jQuery</div>
+                    <div class="skill-tit2">
+                        - 이벤트 처리, 애니메이션 구현 (Banner Slider, Scroll, Count Up 등)<br>
+                        - 플러그인 활용 가능 (jQuery UI, IScroll, Calendar 등)
+                    </div>
+                </div>
+            </div>
 
-		 <div class="skill-per">
-			<div class="clear">
-				 <canvas width="100%" height="100%"></canvas>
-			</div>
-			<p data-pct="90" class="animated fadeInUp"></p>
-		</div>
-		<p class="skill-txt">Web Design</p>
-	 
-	 <div class="skill-per">
-		<div class="clear">
-			 <canvas width="100%" height="100%"></canvas>
-		</div>
-		<p data-pct="85" class="animated fadeInUp"></p>
-	</div>
-	<p class="skill-txt">HTML / CSS</p>
- 
- <div class="skill-per">
-	<div class="clear">
-		 <canvas width="100%" height="100%"></canvas>
-	</div>
-	<p data-pct="70" class="animated fadeInUp"></p>
-	<p class="skill-txt">JavaScript / jQuery</p>
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="80" class="wow fadeInUp">80%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">JavaScript</div>
+                    <div class="skill-tit2">
+                        - JavaScript ES5/ES6 문법에 대한 이해<br>
+                        - 이벤트 처리, 애니메이션 구현 가능
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="55" class="wow fadeInUp">55%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">Ajax</div>
+                    <div class="skill-tit2">
+                        - Asynchronous JavaScript and XML<br>
+                        - javascript와 xml을 이용한 비동기 통신<br>
+                        - 페이지 전환없이 동적으로 변화하는 모습을 자연스럽게 구현 가능
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="55" class="wow fadeInUp">55%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">Node.js</div>
+                    <div class="skill-tit2">
+                        - 크롬 V8 자바스크립트 엔진으로 빌드된 자바스크립트 런타임<br>
+                        - 이벤트 기반, 논블로킹 I/O 모델을 사용해 가볍고 효율적임<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="55" class="wow fadeInUp">55%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">Firebase</div>
+                    <div class="skill-tit2">
+                        - 웹/모바일 개발 기능을 제공하는 BaaS(Backend as a Service)<br>
+                        - 실시간 데이터베이스, 간편한 사용자 인증, 클라우드 저장소, 호스팅, 앱 테스트
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill clear col-xs-12 col-sm-6 col-md-3">
+                <div class="skill-per">
+                    <div>
+                        <canvas width="100%" height="100%"></canvas>
+                    </div>
+                    <p data-pct="90" class="wow fadeInUp">90%</p>
+                </div>
+                <div class="skill-text">
+                    <div class="skill-tit1">Etc</div>
+                    <div class="skill-tit2">
+                        - Web Standards<br>
+                        - Web Accessibility<br>
+                        - Cross Browsing<br>
+                        - Photoshop<br>
+                        - Illustrator
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
 </div>
+  
 
-<div class="skill-per">
-	<div class="clear">
-		 <canvas width="100%" height="100%"></canvas>
-	</div>
-	<p data-pct="50" class="animated fadeInUp"></p>
-	<p class="skill-txt">Ect (node.js / Ajax)</p>
-</div>
-
-</section>
-<footer class="wraps clear">
-    <div class="wrap">
-        <button id="bt_top">
-            <img src="../img/btn_top.png" alt="위로" class="img">
-        </button>
-        <address>
-            <p class="mail">helloyimj@gmail.com</p>
-            <p>ⓒ 2019 YIMJ All rights reserved.</p>
-        </address>
+    <footer class="wraps clear">
+        <div class="wrap">
+            <button id="bt_top">
+                <img src="../img/btn_top.png" alt="위로" class="img">
+            </button>
+            <address>
+                <p class="mail">helloyimj@gmail.com</p>
+                <p>ⓒ 2019 YIMJ All rights reserved.</p>
+            </address>
+        </div>
+    </footer>
     </div>
-</footer>
-</div>
-
-<script src="../js/Chart.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/typer.js"></script>
-</body>
-
-</html>
+    <script src="../js/main.js"></script>
+    <script src="../js/typer.js"></script>
+    </body>
+    
+    </html>

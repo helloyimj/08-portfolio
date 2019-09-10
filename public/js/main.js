@@ -1,28 +1,71 @@
- // Your web app's Firebase configuration
- var firebaseConfig = {
-    apiKey: "AIzaSyAjoB-_7N4brn8pULoXBlqE_HZoXn8nSzE",
-    authDomain: "portfolio-7012f.firebaseapp.com",
-    databaseURL: "https://portfolio-7012f.firebaseio.com",
-    projectId: "portfolio-7012f",
-    storageBucket: "portfolio-7012f.appspot.com",
-    messagingSenderId: "80725144175",
-    appId: "1:80725144175:web:54945613d8acb17a"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
 
+// 브라우저 리프레쉬시 스크롤 최상단 이동
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+});
 
-// ghost button
+// top_nav
+$(function(){
+	var $page = jQuery.url.attr("file");
+	$("ul.menus li a").each(function(){
+		var $href = $(this).attr('href');
+		if ( ($href == $page) || ($href == '') ) {
+			$("ul.menus li").addClass('active');
+		} else {
+			$("ul.menus li").removeClass('active');
+		}
+	});
+});
+
+// ghost button toggle event
 
 $(".ghost").click(function () {
-	$(this).toggleClass("active");
-	if ($("#main_nav").width() === 0) {
-		$("#main_nav").stop().animate({"width": "100%"}, 100, function () {
+	$(this).toggleClass("on");
+	if ($("#nav_sub").width() === 0) {
+		$("#nav_sub").stop().animate({"width": "100%"}, 100, function () {
 
 		});
 	} else {
-		$("#main_nav").stop().animate({"width": "0"}, 100, function () {
+		$("#nav_sub").stop().animate({"width": "0"}, 100, function () {
+
+		});
+	}
+});
+
+///메뉴 애드칼라스 지울예정 
+
+// $(function(){
+// 	var $page = jQuery.url.attr("file");
+// 	$("ul.menus li h5 span").each(function(){
+// 		var $href = $(this).attr('href');
+// 		if ( ($href == $page) || ($href == '') ) {
+// 			$(this).addClass('active');
+// 		} else {
+// 			$(this).removeClass('active');
+// 		}
+// 	});
+// });
+
+
+// 화면 최상단 이동 이벤트
+// $('li > a, #bt_top').on('click', function(e){
+// 	e.preventDefault();
+// 	window.scroll(0, 0);
+// })
+
+
+// 상단메뉴
+
+
+$(".menus>.menu li").click(function () {
+	$(this).find(li).addClass("active");
+	if ($("#nav_sub").width() === 0) {
+
+		$("#nav_sub").stop().animate({"width": "100%"}, 100, function () {
+
+		});
+	} else {
+		$("#nav_sub").stop().animate({"width": "0"}, 100, function () {
 
 		});
 	}
@@ -31,23 +74,11 @@ $(".ghost").click(function () {
 
 
 
-// $(".menus").click(function () {
-// 	$(this).find(li).toggleClass("active");
-// 	if ($("#main_nav").width() === 0) {
 
-// 		$("#main_nav").stop().animate({"width": "100%"}, 100, function () {
-
-// 		});
-// 	} else {
-// 		$("#main_nav").stop().animate({"width": "0"}, 100, function () {
-
-// 		});
-// 	}
-// });
 
 // $('.menus li').bind('mouseenter keyup', function() { // 메뉴바의 각 메뉴들에 마우스를 올리거나 키보드로 이동하면,
 // 	$(this).addClass('active').siblings().removeClass(); // 해당 메뉴에 클래스 on을 추가하고, 다른 메뉴의 클래스를 제거합니다.
-//   });
+//   }); 올리면  호버상태 
 
 
 
@@ -57,25 +88,26 @@ $(".ghost").click(function () {
 $(function () {
 	$("#bt_down").click(function () {
 		$('html, body').animate({
-			scrollTop: 750
-		}, 500);
+			scrollTop: 900
+		}, 300);
 	});
 	$("#bt_top").click(function () {
 		$('html, body').animate({
 			scrollTop: 0
-		}, 500);
+		}, 300);
 	});
 	
 });
 
 
-// 네비게이션 호버 애니메이션 끝난 후 페이지이동 [없어도될것같음 a링크로 변환후 addclass 해줄예정]
+// // 네비게이션 호버 애니메이션 끝난 후 페이지이동 [없어도될것같음 a링크로 변환후 addclass 해줄예정]
 // $(".link-bt").click(function(){
 // 	var src = $(this).data("src");
 // 	setTimeout(function(){
 // 		location.href = src;
-// 	}, 100);
+// 	}, 0);
 // });
+{/* <span data-src="../html/works.html" class="link-bt">WORKS</span */}
 
 
 // Chart
@@ -129,8 +161,9 @@ $(window).scroll(function() {
 new WOW().init();
 
 
+//포트폴리오 바로가기 버튼 링크
 $("#bt_pf").click(function() {
-	$(location).attr("href", "https://naver.com");
+	$(location).attr("href", "../html/works.html");
 });
 
 
@@ -165,24 +198,15 @@ $("#bt_pf").click(function() {
 
 
 // $(function(){
-//     $("#main_nav").find(li).addClass('active');
+//     $("#nav_sub").find(li).addClass('active');
 // });
 
 // $(".menus").find(li).click(function(){
 // 	$(this).toggleClass("active");
 //   });
 
-$(function(){
-	var $page = jQuery.url.attr("file");
-	$("ul.menus li h5 span").each(function(){
-		var $href = $(this).attr('href');
-		if ( ($href == $page) || ($href == '') ) {
-			$(this).addClass('active');
-		} else {
-			$(this).removeClass('active');
-		}
-	});
-});
+
+
 
 // $(function(){
 
@@ -195,3 +219,4 @@ $(function(){
 //     }
 //     });
 // });
+

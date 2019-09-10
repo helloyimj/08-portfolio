@@ -1,17 +1,13 @@
 
 .tit_txt {background-image: url(../img/hello01.png); background-position: center; background-repeat: no-repeat;}
 
-.tit_txt  h1 {
-	font-size: 4em
-	}
 		  
 	.tit_txt  .cursor {
 	 color: #c07cfc;
 	}
 	
 	.tit_txt p {
-	 margin-top: 2rem;
-	 font-size: 1.2em
+	 margin-top: 3rem;
 	}
 
 
@@ -29,7 +25,6 @@ b {font-weight: 600;}
 	padding: 4rem;
 	color: #fff;
 	background-color: #000;
-	/* opacity: 0; */
 }
 .profile h5 {
 	padding-top: 1.5em;
@@ -58,7 +53,7 @@ b {font-weight: 600;}
 }
 #bt_pf {
 	position: absolute;
-	bottom: 1%;
+	bottom: 10%;
 	right: 50%;
 	padding: 0.5rem 1rem;
 	transform: translate(50%, 50%);
@@ -79,61 +74,46 @@ b {font-weight: 600;}
 
 
 
-/* top_bt */
-/* .top_bt {position: fixed; text-align: center; bottom: 50px; right: 50px;  z-index: 999; display: none;}
-.top_bt div {position: absolute; z-index: 99; right: 5%; bottom: 20%; padding-right: 0.65rem; padding-bottom: 1.15rem; font-family: 'Titillium Web', sans-serif; color: white;	line-height: 1;}
-.top_bt img {position: absolute; width: 50px; right: 5%; bottom: 20%;}
-.top_bt:hover {cursor: pointer;} */
+/***** 반응형 처리 *****/
+
+/***** 769px ~ 1024px *****/
+@media screen and (max-width: 1024px) {
 
 
-/***** 반응형 *****/
-/* @media screen and (max-width: 1200px) {
+}
+
+/***** 481px ~ 768px *****/
+@media screen and (max-width: 768px) {
+
+	.profile {display: flex; flex-direction: column-reverse;}
+	.profile-area{width: 80%;}
 	
-	.skills {align-content: center; display: flex;}
-	.skill {position: relative;}
-	.skill-per {float: none; position: relative; width: 140px; height: 140px; left: 50%; transform: translateX(-50%);}
-	.skill-per > div {width: 140px; height: 140px; transform: translate(-1px,-6px);}
-	.skill-per > p {position: absolute; }
-	.skill-text {padding:0; float: none; text-align: center;}
+.picture-area {
+	position: relative;
+    top: 0rem;
+    right: 0;
+	width: 80%;
+	margin: auto;
 }
 
-@media screen and (max-width: 992px) {
-	.tits {margin-top: 100px;}
-	.tops {display: none;}
-	.tops-sm {display: block; position: relative; z-index: 999; width: 100%; height: 75px; background-color: #506fd4;}
-	.tops-sm > .logo {position: absolute; top: 12.5px; left: 50%; transform: translateX(-50%);}
-	.tops-sm > .logo > a > img {width: 45px;}
-	.tops-sm > .ham { position: absolute; top: 50%; transform: translateY(-50%); right: 5%;}
-	.tops-sm > .ham > img {width: 30px;}
-	.tops-sm > .ham > img:hover {cursor: pointer;}
+.tit_txt h1 {font-size: 3em;}
+.tit2 {display: none;}
 
-	.tops-hover {display: none; position: absolute; width: 100%; height: 300px; left: 0; top: 75px; background-color: #506fd4; font-family: 'Titillium Web', sans-serif; font-weight: bold; color: #f9f9fb; font-size: 40px;}
-	.tops-hover > .navs {display: flex; flex-direction: column; align-items: center;
-		position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-
-	.skill {margin: 30px auto;}
-
+#bt_pf {
+	position: relative;
+	bottom: 10%;
+	right: 50%;
+	padding: 0.5rem 1rem;
+	transform: translate(50%, 50%);
+}
 }
 
-@media screen and (max-width: 640px) {
-	.tops {display: none;}
+/***** 321px ~ 480px *****/
+@media screen and (max-width: 480px) {
 
-	.tops-sm {display: block; position: relative; height: 75px; background-color: #506fd4;}
-	.tops-sm > .logo {position: absolute; top: 12.5px; left: 50%; transform: translateX(-50%);}
-	.tops-sm > .logo > a > img {width: 45px;}
-	.tops-sm > .nav {position: absolute; top: 50%; transform: translateY(-50%); right: 5%;}
-	.tops-sm > .nav > img {width: 30px;}
-	.tops-hover {font-size: 32px; height: 250px;}
 
-	.wrap {min-width: 80%; margin-top: 0; display: block;}
-	.skill {margin: 30px auto;}
+/***** 0 ~ 320px *****/
+@media screen and (max-width: 320px) {
+
 }
-
-@media screen and (max-width: 400px) {
-	.tits {margin-top: 50px;}
-	.tit {font-size: 32px;}
-
-	.skills {margin-top: 30px;}
-	.skill {margin: 0; margin-bottom: 30px;}
 }
- */

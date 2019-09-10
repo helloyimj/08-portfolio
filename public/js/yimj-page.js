@@ -30,7 +30,7 @@ $(document).ready(function(){
 			if (e.deltaY == -1) {
 				// 휠을 밑으로 페이지는 위로
 				if (now < len - 1) {
-					$("html, body").stop().animate({"scrollTop": pos[now + 1] + "px"}, 800, function () {
+					$("html, body").stop().animate({"scrollTop": pos[now + 1] + "px"}, 600, function () {
 						$(".pagers > div").attr("class", "");
 						$(".pagers > div").not($(".pagers > div").eq(now + 1)).addClass("pager_def");
 						$(".pagers > div").eq(now + 1).addClass("pager_sel");
@@ -40,7 +40,7 @@ $(document).ready(function(){
 			} else {
 				// 휠을 위로 페이지는 밑으로
 				if (now > 0) {
-					$("html, body").stop().animate({"scrollTop": pos[now - 1] + "px"}, 800, function () {
+					$("html, body").stop().animate({"scrollTop": pos[now - 1] + "px"}, 600, function () {
 						$(".pagers > div").attr("class", "");
 						$(".pagers > div").not($(".pagers > div").eq(now - 1)).addClass("pager_def");
 						$(".pagers > div").eq(now - 1).addClass("pager_sel");
