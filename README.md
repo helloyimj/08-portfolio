@@ -9,7 +9,7 @@ https://yimj-portfoliosite.web.app/html/works.html
 ```url
 https://yimj-weather.firebaseapp.com/html/weather.html
 ```
-### 파이오니아 코리아 패럴랙스
+### 파이오니아 코리아 웹디자인 리뉴얼
 ```url
 https://yimj-portfoliosite.web.app/pioneer/public/html/main.html
 ```
