@@ -33,13 +33,13 @@ https://yimj-portfoliosite.web.app/fursys/html/main.html
 ```url
 https://yimj-portfoliosite.web.app/nike/html/main.html
 ```
- - html5 / CSS5 / jQuer / 웹디자인 리뉴얼
+ - html5 / CSS5 / jQuery / 웹디자인 리뉴얼
 
 ### 남해관광안내 웹디자인 리뉴얼(반응형)
 ```url
 https://yimj-portfoliosite.web.app/namhea/html/main.html
 ```
-html5 / CSS5 / jQuer / bootstrap / 웹디자인 리뉴얼
+html5 / CSS5 / jQuery / bootstrap / 웹디자인 리뉴얼
 
 ### cafe 예약페이지 원페이지 반응형(반응형)
 ```url
@@ -51,10 +51,10 @@ https://yimj-portfoliosite.web.app/brunch/html/main_flex.html
 ```url
 https://teal-macaron-df2a4c.netlify.app
 ```
- - html5 / CSS5 / jQuer / bootstrap / 반응형 / 웹디자인
+ - html5 / CSS5 / jQuery / bootstrap / 반응형 / 웹디자인
 
 ### BLUEReal Estate
 ```url
 https://yimj-portfoliosite.web.app/blue_estate/html/main.html
 ```
- - html5 / CSS5 / jQuer / bootstrap / 반응형 /  웹디자인
+ - html5 / CSS5 / jQuery / bootstrap / 반응형 /  웹디자인
