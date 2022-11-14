@@ -35,7 +35,7 @@ https://yimj-portfoliosite.web.app/brunch/html/main_flex.html
 ```
 ### Wedding Catering 원페이지 반응형 웹사이트
 ```url
-https://yimj-portfoliosite.web.app----
+https://teal-macaron-df2a4c.netlify.app
 ```
 ### BLUEReal Estate
 ```url
